@@ -1,6 +1,7 @@
 
 //base
 @import './base/normalize';
+@import './base/container';
 
 //components
 
@@ -17,24 +18,12 @@
 @import './layout/modal';
 @import './layout/portfolio-buttons';
 @import './layout/portfolio-box';
+@import './layout/_menu-container';
+@import './layout/buttons';
 
 //pages
 
 
-.body {
-  font-family:  $textPrimary;
-  background: white;
-  font-size: 14px;
-  color:  #757575 ;
-  letter-spacing: 0.03em; 
-}
 
-.container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 
