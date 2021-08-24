@@ -1,0 +1,40 @@
+
+//base
+@import './base/normalize';
+
+//components
+
+@import './components/variable';
+
+//layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/modal';
+@import './layout/portfolio-buttons';
+@import './layout/portfolio-box';
+
+//pages
+
+
+.body {
+  font-family:  $textPrimary;
+  background: white;
+  font-size: 14px;
+  color:  #757575 ;
+  letter-spacing: 0.03em; 
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
