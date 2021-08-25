@@ -1140,9 +1140,8 @@ body {
 }
 
 /* contacts */
-.contacts_icon {
-  fill: currentColor;
-  margin-right: 10px;
+.contacts {
+  margin-bottom: 64px;
 }
 
 .contacts_item:not(:last-child) {
@@ -1164,6 +1163,34 @@ body {
 .contacts_link.tel {
   font-size: 34px;
   color: #2196F3;
+}
+
+.menu-container-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.menu-container-box_item {
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-right: 2px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-container-box_item:last-child {
+  border-right: none;
 }
 
 .menu-toggle {
