@@ -25,14 +25,6 @@ a {
   margin: 0px;
 }
 
-body {
-  font-family: #757575;
-  background: white;
-  font-size: 14px;
-  color: #757575;
-  letter-spacing: 0.03em;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -65,6 +57,7 @@ body {
 /*цвет фона в блоке наша команда*/
 .page-header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 /*logo*/
@@ -95,6 +88,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-toggle .icon-menu {
+  display: none;
+}
+
+.menu-toggle.js-open-menu .icon-menu {
+  display: block;
+}
+
+.menu-toggle.js-open-menu .icon-cross {
+  display: none;
 }
 
 .hero {
@@ -1106,8 +1131,20 @@ body {
 }
 
 .menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   padding: 32px;
-  background-color: #ffffff;
+  background-color: rosybrown;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.menu-container .menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mobile-menu {
@@ -1193,23 +1230,11 @@ body {
   border-right: none;
 }
 
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  outline: none;
+body {
+  font-family: #757575;
+  background: white;
+  font-size: 14px;
+  color: #757575;
+  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=main.css.map */

@@ -18,12 +18,19 @@
 @import './layout/modal';
 @import './layout/portfolio-buttons';
 @import './layout/portfolio-box';
-@import './layout/_menu-container';
 @import './layout/buttons';
+@import './layout/_menu-container';
+
 
 //pages
 
-
+body {
+  font-family: #757575;
+  background: white;
+  font-size: 14px;
+  color:  #757575 ;
+  letter-spacing: 0.03em; 
+}
 
 
 

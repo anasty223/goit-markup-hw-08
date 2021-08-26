@@ -1,5 +1,6 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+  position: relative;
   // padding-top: 24px;
   // padding-bottom: 24px;
  
@@ -28,5 +29,26 @@
 .navigation {
   display: flex;
 }
-
-
+.menu-toggle{
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  
+}
+.menu-toggle .icon-menu{
+    display: none;
+  }
+.menu-toggle.js-open-menu .icon-menu{
+display: block;
+} 
+.menu-toggle.js-open-menu .icon-cross{
+  display: none;
+}

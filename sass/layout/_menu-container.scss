@@ -1,8 +1,23 @@
 .menu-container{
+  // display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
     padding: 32px;
-    background-color: $whitw-color;
+    background-color: rosybrown;
+    transform: translateX(100%);
+    // background-color: $whitw-color;
+
+   .menu-container.is-open{
+     transform: translateX(0);
+   }
 }
+
 .mobile-menu {
+
     margin-bottom: 302px;
 //   display: flex;
 //   align-items: center;
@@ -97,6 +112,7 @@ margin-bottom: 32px;
 
     }
 }
+
 .menu-container-box{
   display: flex;
   align-items: center;
