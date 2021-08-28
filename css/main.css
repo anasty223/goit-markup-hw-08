@@ -65,7 +65,7 @@ a {
           align-items: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .page-header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -87,6 +87,10 @@ a {
 }
 
 .menu-toggle {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   background-color: transparent;
 }
@@ -110,34 +114,26 @@ a {
 }
 
 /*секция навигация*/
-@media screen and (min-width: 767px) {
-  .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-@media screen and (min-width: 767px) {
-  .page-header__navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.page-header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media screen and (min-width: 767px) {
-  .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.navigation {
+  display: none;
 }
 
 @media screen and (min-width: 767px) {
@@ -212,21 +208,6 @@ a {
 }
 
 /* contacts */
-@media screen and (min-width: 767px) {
-  .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-  }
-}
-
 @media screen and (min-width: 767px) {
   .contacts_icon {
     fill: currentColor;
