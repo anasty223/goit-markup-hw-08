@@ -82,6 +82,18 @@ a {
   font-size: 26px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-header {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-header {
+    margin-right: 93px;
+  }
+}
+
 .logo-header__text {
   color: #212121;
 }
@@ -114,7 +126,7 @@ a {
 }
 
 /*секция навигация*/
-.main-nav {
+.navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,120 +148,111 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 767px) {
-  .navigation_item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .navigation_link {
-    position: relative;
-    color: #212121;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    font-weight: 500;
+@media screen and (min-width: 768px) {
+  .navigation {
     display: block;
-    font-family: roboto, sans-serif;
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-@media screen and (min-width: 767px) {
-  .navigation_link::after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #2196f3;
-    left: 0;
-    bottom: -1;
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.navigation_item:not(:last-child) {
+  margin-right: 50px;
 }
 
-@media screen and (min-width: 767px) {
-  .navigation_link.current::after {
-    opacity: 1;
-    top: 43px;
-  }
+.navigation_link {
+  position: relative;
+  color: #212121;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  font-family: roboto, sans-serif;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 767px) {
-  .navigation_link:hover,
-  .navigation_link:focus {
-    color: #2196f3;
-  }
+.navigation_link::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  left: 0;
+  bottom: -1;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 767px) {
-  .current {
-    display: none;
-  }
+.navigation_link.current::after {
+  opacity: 1;
+  top: 28px;
 }
 
-@media screen and (min-width: 767px) {
-  .current {
-    color: #2196f3;
-  }
+.navigation_link:hover,
+.navigation_link:focus {
+  color: #2196f3;
 }
 
-@media screen and (min-width: 767px) {
-  .navigation.current::after:hover {
-    width: 40px;
-    height: 4px;
-    background-color: #2196f3;
-  }
+.current {
+  color: #2196f3;
+}
+
+.navigation.current::after:hover {
+  width: 40px;
+  height: 4px;
+  background-color: #2196f3;
 }
 
 /* contacts */
-@media screen and (min-width: 767px) {
-  .contacts_icon {
-    fill: currentColor;
-    margin-right: 10px;
+.contacts {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    margin-left: auto;
   }
 }
 
-@media screen and (min-width: 767px) {
-  .contacts_item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .contacts_link {
-    color: #757575;
-    text-decoration: none;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    font-weight: 500;
+@media screen and (min-width: 1200px) {
+  .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    font-family: roboto, sans-serif;
   }
 }
 
-@media screen and (min-width: 767px) {
-  .contacts_link:hover {
-    color: #2196f3;
-  }
+.contacts_icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
-@media screen and (min-width: 767px) {
-  .contacts_icon:hover {
-    fill: #2196f3;
-  }
+.contacts_link {
+  color: #757575;
+  text-decoration: none;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: roboto, sans-serif;
+}
+
+.contacts_link:hover {
+  color: #2196f3;
+}
+
+.contacts_icon:hover {
+  fill: #2196f3;
 }
 
 .hero {
