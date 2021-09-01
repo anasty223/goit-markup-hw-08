@@ -3,14 +3,29 @@
   padding-bottom: 60px;
   padding-top: 72px;
 }
-.footer-box {
-  display: flex;
+ .footer-box {
+   display: flex;
+
+  // display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .footer-box-container {
+  @media screen and(min-width:768px) {
+    
   display: flex;
+ 
+ 
+}
+}
+
+.footex-adress{
+  margin-bottom: 60px;
+  text-align: center;
+
+ 
 }
 .logo-footer {
   color:  $accent-color ;
@@ -59,7 +74,7 @@
 /* join  */
 
 .join-box {
-  margin-left: 70px;
+  // margin-left: 70px;
   padding: 0px;
 }
 .join__title{
@@ -69,6 +84,7 @@
   font-style: normal;
   margin-bottom: 20px;
   font-family:  $textPrimary;
+  text-align: center;
 }
 
 .join-social {
@@ -76,6 +92,7 @@
   padding: 0px;
   margin: 0px;
   margin-right: 10px;
+  margin-bottom: 60px;
 }
 
 .join-social__item:not(:last-child) {
@@ -116,7 +133,7 @@
 .footer-sibscribe-box {
   display: flex;
   justify-content: flex-end;
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .footer-sibscribe__form {
@@ -124,6 +141,9 @@
   text-transform: uppercase;
   color:  $whitw-color ;
   font-style: normal;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .footer-sibscribe__title{
   line-height: 1.15;
@@ -132,10 +152,12 @@
   font-style: normal;
   margin-bottom: 20px;
   font-family:  $textPrimary;
+  text-align: center;
 }
 .footer-sibscribe__input {
-  width: 358px;
+  // width: 358px;
   height: 50px;
+  width: 450px;
   border-radius: 4px;
   padding-left: 16px;
   font-size: 16px;
@@ -143,8 +165,11 @@
   letter-spacing: 0.03em;
   margin: 0;
   text-decoration: none;
-  border: none;
+  // border: none;
  font-family:  $textPrimary;
+ background-color: transparent;
+ border: 1px solid #4e4d4d;
+ margin-bottom: 20px;
 }
 /* footer-btn  */
 .footer-btn {
