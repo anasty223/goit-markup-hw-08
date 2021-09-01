@@ -11,11 +11,38 @@
   display: block;
   margin-bottom: 50px;
   font-family:  $textPrimary;
+
+  @media screen and(max-width: 1200px){
+    font-size: 28px;
+  }
 }
-.clients {
-  display: flex;
+
+ 
+  .clients{
+   display: flex;
+  flex-wrap: wrap;
+  margin: -15px; 
+
+  @media screen and(max-width: 1200px){
+   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+}
+
+.clients__item{
+   flex-basis: calc(100%/2 - 30px);
+    margin: 15px;
+
+@media screen and(min-width: 767px){
+     flex-basis: calc(100%/3 - 30px);
+    margin: 15px;
+}
+@media screen and(min-width: 1200px){
+  flex-basis: calc(100%/6 - 30px);
+  margin: 15px;
+}
+
 }
 .clients__link {
   border: 1px solid #afb1b8;
