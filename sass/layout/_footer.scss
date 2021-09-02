@@ -4,26 +4,48 @@
   padding-top: 72px;
 }
  .footer-box {
-   display: flex;
-
-  // display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and(min-width:1200px) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+flex-direction: row;
+  }
 }
 
+
 .footer-box-container {
-  @media screen and(min-width:768px) {
-    
+
+  @media screen and(min-width: 768px) {
+  
   display: flex;
- 
- 
+
+justify-content: space-around;
+ margin-bottom: 60px;
+ align-items: flex-start;
+ }
+@media screen and(min-width: 1200px) {
+  display: flex;
+   margin-bottom: 0;
+   
 }
+
 }
 
 .footex-adress{
-  margin-bottom: 60px;
-  text-align: center;
+  @media screen and(max-width:768px) {
+   margin-bottom: 60px;
+    text-align: center;
+   
+  }
+  @media screen and(min-width: 1200px) {
+    margin: 0;
+  }
+
 
  
 }
@@ -49,8 +71,17 @@
   font-weight: 400;
   line-height: 1.7;
   font-family:  $textPrimary;
-}
 
+ 
+}
+.adress__item{
+  @media screen and(min-width: 768px) {
+     margin-right: 165px;
+  }
+ @media screen and(min-width: 1200px) {
+   margin-right: 70px;
+ }
+}
 .adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -62,7 +93,6 @@
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
   font-family:  $textPrimary;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
@@ -74,7 +104,13 @@
 /* join  */
 
 .join-box {
-  // margin-left: 70px;
+
+
+@media screen and(min-width: 1200px) {
+ 
+  padding: 0px;
+}
+  
   padding: 0px;
 }
 .join__title{
@@ -85,6 +121,12 @@
   margin-bottom: 20px;
   font-family:  $textPrimary;
   text-align: center;
+
+  @media screen and(min-width: 768px){
+
+     text-align: start;
+  }
+
 }
 
 .join-social {
@@ -92,7 +134,11 @@
   padding: 0px;
   margin: 0px;
   margin-right: 10px;
-  margin-bottom: 60px;
+
+  @media screen and(max-width:768px){
+      margin-bottom: 60px;
+  }
+
 }
 
 .join-social__item:not(:last-child) {
@@ -133,7 +179,15 @@
 .footer-sibscribe-box {
   display: flex;
   justify-content: flex-end;
-  // margin-left: auto;
+
+  @media screen and(min-width: 1200px) {
+ display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+
+  
+  }
+  
 }
 
 .footer-sibscribe__form {
@@ -144,6 +198,11 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+
+@media screen and(min-width: 1200px) {
+  display: block;
+ 
+}
 }
 .footer-sibscribe__title{
   line-height: 1.15;
@@ -152,10 +211,14 @@ align-items: center;
   font-style: normal;
   margin-bottom: 20px;
   font-family:  $textPrimary;
-  text-align: center;
+
+  @media screen and(max-width: 768px) {
+    text-align: center;
+  }
+  
 }
 .footer-sibscribe__input {
-  // width: 358px;
+
   height: 50px;
   width: 450px;
   border-radius: 4px;
@@ -165,11 +228,17 @@ align-items: center;
   letter-spacing: 0.03em;
   margin: 0;
   text-decoration: none;
-  // border: none;
- font-family:  $textPrimary;
+  font-family:  $textPrimary;
  background-color: transparent;
  border: 1px solid #4e4d4d;
  margin-bottom: 20px;
+
+   
+ 
+ @media screen and(min-width: 1200px) {
+      width: 358px;
+      margin: 0;
+}
 }
 /* footer-btn  */
 .footer-btn {
