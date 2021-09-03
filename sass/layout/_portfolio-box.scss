@@ -10,11 +10,12 @@
   position: relative;
 }
 .portfolio-box__item{
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 2 - 30px);
 
   margin-left: 30px;
   margin-top: 30px;
   display: flex;
+  width: 100%;
 }
 .portfolio-box__link {
   font-family:  $textPrimary;

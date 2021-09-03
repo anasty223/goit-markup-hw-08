@@ -1577,6 +1577,16 @@ a {
           justify-content: flex-start;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .portfolio-buttons__item {
   margin-bottom: 15px;
   margin-right: 8px;
@@ -1640,13 +1650,14 @@ a {
 }
 
 .portfolio-box__item {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
+  -ms-flex-preferred-size: calc(100% / 2 - 30px);
+      flex-basis: calc(100% / 2 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .portfolio-box__link {
