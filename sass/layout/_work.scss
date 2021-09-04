@@ -1,3 +1,11 @@
+@media screen and(max-width: 1199px){
+.work-section{
+  display: none;
+}
+}
+
+@media screen and(min-width: 1200px){
+  
 .work-section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -34,4 +42,6 @@
 
 .work__item:not(:last-child) {
   margin-right: 30px;
+}
+
 }
