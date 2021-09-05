@@ -156,8 +156,8 @@ a {
   }
 }
 
-.menu-container .contacts-box {
-  margin-bottom: auto;
+.contacts-box {
+  margin-top: auto;
 }
 
 .menu-container.is-open {

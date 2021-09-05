@@ -77,11 +77,12 @@ background-color: $whitw-color;
    @media screen and(min-width: 1200px) {
       display: none;
    }
-   .contacts-box{
-     margin-bottom: auto;
-   }
+ 
  
 }
+  .contacts-box{
+     margin-top: auto;
+   }
 .menu-container.is-open{
   // display: block;
   transform: translateX(0);
