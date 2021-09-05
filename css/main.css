@@ -58,6 +58,8 @@ a {
 /*цвет фона в блоке наша команда*/
 .page-header__container {
   border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,13 +73,20 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .page-header__container {
-    height: 80px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__container {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -360,7 +369,7 @@ a {
 
 .navigation_link.current::after {
   opacity: 1;
-  top: 45px;
+  top: 47px;
 }
 
 .navigation_link:hover,
