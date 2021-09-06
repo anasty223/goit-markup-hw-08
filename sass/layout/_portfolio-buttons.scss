@@ -8,20 +8,23 @@
 .portfolio-buttons {
   display: flex;
   flex-wrap: wrap;
-
+margin-bottom: 40px;
   justify-content: flex-start;
   // margin-bottom: 50px;
    @media screen and(min-width: 768px) {
      flex-wrap: nowrap;
      justify-content: center;
+     margin-top: -15px;
+     margin-left: -8px;
+     margin-bottom: 40px;
    }
 }
 .portfolio-buttons__item{
-  margin-bottom: 15px;
-  margin-right: 8px;
+  margin-top: 15px;
+  margin-left: 8px;
 }
 .portfolio-buttons__item:nth-child(n + 4){
- margin-bottom: 40px;
+ margin-bottom: 0px;
 }
 .portfolio-buttons__item:nth-child(5) {
 margin-right: 0;
